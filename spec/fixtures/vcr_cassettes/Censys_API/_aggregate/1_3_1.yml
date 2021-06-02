@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://search.censys.io/api/v2/hosts/aggregate?field=location.continent&q=services.http.response.body_hash:%22sha1:4a3ce8ee11e091dd7923f4d8c6e5b5e41ec7c047%22
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - search.censys.io
+      Authorization:
+      - "<CENSORED>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 02 Jun 2021 23:25:39 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Content-Type-Options:
+      - nosniff
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - 0a70a5110c0000ed3bfe29e000000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=LdSAe9SjLLRwhNQ8mTFMOjr1KMuJ0nn3QHxtpC2Qk68nnisfWUcvaoNooK43VZxY%2BB63BEQHsV1AgKIPW6j%2BkX6z6%2B7SZGSsFJPIDwRh0ggAB7r7JtqsIE%2B%2F19B4"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6594712e7878ed3b-SJC
+    body:
+      encoding: ASCII-8BIT
+      string: '{"code": 200, "status": "OK", "result": {"total": 90, "total_omitted":
+        0, "potential_deviation": 0, "buckets": [{"key": "Europe", "count": 46}, {"key":
+        "North America", "count": 28}, {"key": "Asia", "count": 15}, {"key": "Oceania",
+        "count": 1}], "query": "services.http.response.body_hash:\"sha1:4a3ce8ee11e091dd7923f4d8c6e5b5e41ec7c047\"",
+        "field": "location.continent"}}'
+  recorded_at: Wed, 02 Jun 2021 23:25:39 GMT
+recorded_with: VCR 6.0.0

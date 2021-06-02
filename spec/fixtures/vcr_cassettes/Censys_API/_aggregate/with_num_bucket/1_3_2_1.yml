@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://search.censys.io/api/v2/hosts/aggregate?field=location.continent&num_buckets=1&q=services.http.response.body_hash:%22sha1:4a3ce8ee11e091dd7923f4d8c6e5b5e41ec7c047%22
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - search.censys.io
+      Authorization:
+      - "<CENSORED>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 02 Jun 2021 23:26:07 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Content-Type-Options:
+      - nosniff
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - 0a70a57fbc00001fcbea373000000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=rMnpJJP6FTNnsNx5MHHtbliFJAjrFoeacQ2IGD2TZ9Tbrq9nVvqcsGUMI%2BYASRScrNNqmOD5FzzTDV7ntVCRVaowWTKjjkwvWUaQenzzlh%2B9vqscKg0PvzGePIlU"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 659471df9f261fcb-SJC
+    body:
+      encoding: ASCII-8BIT
+      string: '{"code": 200, "status": "OK", "result": {"total": 90, "total_omitted":
+        44, "potential_deviation": 0, "buckets": [{"key": "Europe", "count": 46}],
+        "query": "services.http.response.body_hash:\"sha1:4a3ce8ee11e091dd7923f4d8c6e5b5e41ec7c047\"",
+        "field": "location.continent"}}'
+  recorded_at: Wed, 02 Jun 2021 23:26:07 GMT
+recorded_with: VCR 6.0.0
