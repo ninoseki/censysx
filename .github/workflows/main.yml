@@ -11,6 +11,8 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.0.0
+          bundler-cache: true
+
       - name: Run the default task
         run: |
           gem install bundler -v 2.2.15
