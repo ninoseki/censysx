@@ -8,8 +8,11 @@ require "rspec"
 require "vcr"
 require "censys"
 
-CENSYS_ID = ENV["CENSYS_ID"] || ""
-CENSYS_SECRET = ENV["CENSYS_SECRET"] || ""
+ENV["CENSYS_ID"] = "foo" unless ENV.key?("CENSYS_ID")
+ENV["CENSYS_SECRET"] = "bar" unless ENV.key?("CENSYS_SECRET")
+
+CENSYS_ID = ENV["CENSYS_ID"] || "foo"
+CENSYS_SECRET = ENV["CENSYS_SECRET"] || "bar"
 
 def authorization_field
   require "base64"
