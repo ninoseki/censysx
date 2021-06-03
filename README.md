@@ -1,5 +1,7 @@
 # Censysx
 
+[![Gem Version](https://badge.fury.io/rb/censysx.svg)](https://badge.fury.io/rb/censysx)
+
 A Censys Search v2 API wrapper for Ruby. 💎
 
 - [Official API Docs](https://search.censys.io/api)
