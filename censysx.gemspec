@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary       = "Censys Search v2 API wrapper for Ruby"
   spec.homepage      = "https://github.com/ninoseki/censysx"
   spec.license       = "MIT"
-  spec.required_ruby_version = Gem::Requirement.new(">= 3.0.0")
+  spec.required_ruby_version = Gem::Requirement.new(">= 2.7")
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/ninoseki/censysx"
